@@ -13,11 +13,12 @@ using namespace std;
 
 // Return a greeting: "Nice to meet you, NAME."
 // If name param is empty string, return "Nice to meet you."
+
 string greet(string name) {
 
-if (name != "") {
+if (name != "") { 
 
-  cout << "Nice to meet you, " << name << ".";
+  return "Nice to meet you, " + name + ".";
 
 } else {
 
@@ -27,12 +28,12 @@ if (name != "") {
 return 0;
 }
 
-
 // Return true if denominator is a factor of numerator.
 // Return false otherwise.
+
 bool isFactor(int numerator, int denominator) {
 
-  if ((numerator / denominator) % 2 == 0) {
+  if (numerator % denominator == 0) { 
   
   return true;
 
@@ -51,7 +52,7 @@ void makeChange(unsigned int initialValue, unsigned int &quarters,
 
       int left_Over;
 
-      quarters = initialValue / 25;
+      quarters = initialValue / 25; 
       left_Over = initialValue % 25;
 
       dimes = left_Over / 10;
@@ -75,7 +76,7 @@ return (celsiusTemp * 9 / 5) + 32;
 // Convert a Fahrenheit temperature to a Celsius temperature.
 double fahrenheitToCelsius(double fahrenheitTemp) {
 
-return (fahrenheitTemp - 32) * 5 / 9;
+return (fahrenheitTemp - 32) * 5 / 9; 
 
 }
 
